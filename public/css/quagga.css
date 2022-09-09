@@ -1,0 +1,35 @@
+#interactive.viewport {
+    position: relative;
+}
+ 
+#interactive.viewport > canvas, #interactive.viewport > video {
+    max-width: 100%;
+    width: 100%;
+}
+ 
+canvas.drawing, canvas.drawingBuffer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+   
+@media (max-width: 603px) {
+ 
+  .reader-config-group {
+    width: 100%;
+  }
+ 
+  .reader-config-group label > span {
+      width: 50%;
+  }
+ 
+  .reader-config-group label > select, .reader-config-group label > input {
+      max-width: calc(50% - 2px);
+  }
+ 
+  #interactive.viewport {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
